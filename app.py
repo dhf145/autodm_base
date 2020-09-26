@@ -38,6 +38,10 @@ def start():
                         print("DM will be deleted because does not contains keyword..")
                         tw.delete_dm(id)
 
+                    if ["wts","wtb","shopee","tokopedia","toped"] in message:
+                        print("DM will be deleted because contains bad keyword...")
+                        tw.delete_dm(id)
+                        
             dms = list()
 
         else:
