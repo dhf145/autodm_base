@@ -40,7 +40,8 @@ def start():
 
                     thislist = ["wts", "wtb"]
                     if thislist in message:
-                        print("DM will be deleted because does not contains keyword..")
+                        print("DM will be posted")
+                        tw.post_tweet(message)
                         tw.delete_dm(id)
                     else:
                         print("DM will be deleted because does contains bad keyword..")
