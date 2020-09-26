@@ -41,10 +41,10 @@ def start():
                     if "wts" in message:
                         print("DM will be deleted because contains 'wts' keyword..")
                         tw.delete_dm(id)
-                    else:
-                        print("DM will be posted")
-                        tw.post_tweet(message)
-                        tw.delete_dm(id)
+                        else:
+                            print("DM will be posted")
+                            tw.post_tweet(message)
+                            tw.delete_dm(id)
 
 
             dms = list()
