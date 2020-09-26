@@ -21,7 +21,7 @@ def start():
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
                     if "pasuju" in message:
-                        if ["wts", "wtb", "shopee", "tokopedia", "toped"] in message:
+                        if ("wts", "wtb", "shopee", "tokopedia", "toped") in message:
                             print("DM will be deleted because contains bad keyword...")
                             tw.delete_dm(id)
                         if len(message) is not 0:
