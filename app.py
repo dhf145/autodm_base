@@ -22,7 +22,7 @@ def start():
                     # just use lower(message) and check it, but please remove the replace function line
                     if "pasuju" in message:
                         if len(message) is not 0:
-                            if "wts", "wtb" in message:
+                            if "wts" or "wtb" in message:
                                 print("DM will be deleted because it contains bad keyword..")
                                 tw.delete_dm(id)
                                 continue
