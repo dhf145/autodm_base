@@ -35,6 +35,7 @@
     <list default="true" id="94591e13-b70a-45ce-a307-d9e7f3ed3d2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +185,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="407" y="69" key="RollbackChangesDialog" timestamp="1601176499428">
+      <screen x="0" y="23" width="1280" height="713" />
+    </state>
+    <state x="407" y="69" key="RollbackChangesDialog/0.23.1280.713@0.23.1280.713" timestamp="1601176499428" />
     <state x="150" y="23" width="982" height="713" key="SettingsEditor" timestamp="1601099003068">
       <screen x="0" y="23" width="1280" height="713" />
     </state>
