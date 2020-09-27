@@ -25,7 +25,6 @@ def start():
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
                                 tw.post_tweet(message)
-                                tw.delete_dm(id)
                                 tw.reply_dm(sender_id)
                             else:
                                 print("DM will be posted with media")
