@@ -23,6 +23,12 @@ def start():
                     if "wts" in message:
                         message = message.replace("wts", "wt$")
                         pass
+                    if "wtb" in message:
+                        message = message.replace("wtb", "wt8")
+                        pass
+                    if "shopee" in message:
+                        message = message.replace("shopee", "oren")
+                        pass
                     if "Pasuju" in message:
                         message = message.lower()
                         if len(message) is not 0:
