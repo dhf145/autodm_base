@@ -21,7 +21,7 @@ def start():
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
                     if "wts" or "wtb" in message:
-                        message = message.replace("wt$")
+                        message = message.replace("wts", "wt$")
                     elif "pasuju" in message:
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
