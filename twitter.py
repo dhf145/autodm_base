@@ -142,10 +142,10 @@ class Twitter:
             pass
 
     #Reply to successfully posted DM
-    def reply_dm(self, screen_name):
-        print("Confirming the DM is posted, id = "+ str(screen_name))
+    def reply_dm(self, sender_id):
+        print("Confirming the DM is posted, id = "+ str(sender_id))
         try:
-            self.api.send_direct_message(screen_name, "DM kamu sudah terposting ya! Chat kamu akan terhapus secara otomatis")
+            self.api.send_direct_message(sender_id, "DM kamu sudah terposting ya! Chat kamu akan terhapus secara otomatis")
             time.sleep(40)
         except Exception as e:
             print(e)
