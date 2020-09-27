@@ -15,7 +15,6 @@ def start():
                 # I take sender_id just in case you want to know who's sent the message
                 sender_id = dms[i]['sender_id']
                 id = dms[i]['id']
-                recipient_id = dms[i]['recipient_id']
 
                 if len(message) is not 0 and len(message) < 280:
                     # prikitiw is the keyword
@@ -26,13 +25,11 @@ def start():
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
                                 tw.post_tweet(message)
-                                tw.reply_dm(recipient_id)
                                 tw.delete_dm(id)
                             else:
                                 print("DM will be posted with media")
                                 print(dms[i]['shorted_media_url'])
                                 tw.post_tweet_with_media(message, dms[i]['media'],dms[i]['shorted_media_url'], dms[i]['type'])
-                                tw.reply_dm(recipient_id)
                                 tw.delete_dm(id)
                         else:
                             print("DM deleted because its empty..")
