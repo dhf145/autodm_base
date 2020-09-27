@@ -73,13 +73,6 @@ class Twitter:
             time.sleep(60)
             pass
 
-    # Confirming a sent tweet by replying the DM
-    def reply_dm(self,sender_id):
-        recipient_id= str(sender_id)
-        msg = "Thank you!"
-        self.api.send_direct_message(recipient_id, msg)
-        time.sleep(40)
-        pass
 
 
         # Delete the message if it doesnt contain a keyword
@@ -149,11 +142,12 @@ class Twitter:
             pass
 
     #Reply to successfully posted DM
-    def reply_dm(self, sender_id):
-        print("Confirming the DM is posted, id = "+ str(sender_id))
+    def reply_dm(self, screen_name):
+        print("Confirming the DM is posted, id = "+ str(screen_name))
         try:
-            self.api.send_direct_message(sender_id, "The DM is posted!")
+            self.api.send_direct_message(screen_name, "DM kamu sudah terposting ya! Chat kamu akan terhapus secara otomatis")
             time.sleep(40)
         except Exception as e:
             print(e)
             return dms
+            pass
