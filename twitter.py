@@ -137,3 +137,13 @@ class Twitter:
         except Exception as e:
             print(e)
             pass
+
+    #Reply to successfully posted DM
+    def reply_dm(self, id):
+        print("Confirming the DM is posted, id = "+ str(id))
+        try:
+            self.api.send_direct_message(recipient_id, "The DM is posted!")
+            time.sleep(40)
+        except Exception as e:
+            print(e)
+            return dms
