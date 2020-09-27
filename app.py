@@ -33,7 +33,7 @@ def start():
                         message = message.replace("shopee", "oren")
                         pass
 
-                    keyword = "Pasuju"
+                    keyword = ['Pasuju', 'PASUJU', 'pasuju']
                     if keyword.casefold() in message:
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
