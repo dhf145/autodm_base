@@ -1,3 +1,5 @@
+from typing import Any
+
 import tweepy
 import constants
 import time
@@ -72,15 +74,13 @@ class Twitter:
             pass
 
     # Confirming a sent tweet by replying the DM
-    def reply_dm(self, recipienet_id, text):
-        # ID of the recipient
-        recipient_id = str(sender_id)
-        # text to be sent
-        text = "This is a Direct Message."
-        # sending the direct message
-        direct_message = api.send_direct_message(recipient_id, text)
-        # printing the text of the sent direct message
-        print(direct_message.message_create['message_data']['text'])
+    def reply_dm(self,sender_id):
+        recipient_id= str(sender_id)
+        msg = "Thank you!"
+        self.api.send_direct_message(recipient_id, msg)
+        time.sleep(40)
+        pass
+
 
         # Delete the message if it doesnt contain a keyword
     def delete_dm(self, id):
