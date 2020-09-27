@@ -83,15 +83,6 @@ class Twitter:
             time.sleep(40)
             pass
 
-    #Reply to successfully posted DM
-    def reply_dm(self, id):
-        print("Confirming the DM is posted, id = "+ str(id))
-        try:
-            self.api.send_direct_message(recipient_id, "The DM is posted!")
-            time.sleep(40)
-            return dms
-
-
     # Post tweet (text only)
     def post_tweet(self, tweet):
         try:
