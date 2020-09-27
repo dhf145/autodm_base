@@ -32,8 +32,9 @@ def start():
                         message = message.casefold()
                         message = message.replace("shopee", "oren")
                         pass
-                    if "Pasuju" in message:
-                        message = message.casefold()
+
+                    keyword = "Pasuju"
+                    if keyword.casefold() in message:
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
