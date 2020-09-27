@@ -71,8 +71,18 @@ class Twitter:
             time.sleep(60)
             pass
 
+    # Confirming a sent tweet by replying the DM
+    def reply_dm(self, recipienet_id, text):
+        # ID of the recipient
+        recipient_id = str(sender_id)
+        # text to be sent
+        text = "This is a Direct Message."
+        # sending the direct message
+        direct_message = api.send_direct_message(recipient_id, text)
+        # printing the text of the sent direct message
+        print(direct_message.message_create['message_data']['text'])
 
-    # Delete the message if it doesnt contain a keyword
+        # Delete the message if it doesnt contain a keyword
     def delete_dm(self, id):
         print("Deleting dm with id = "+ str(id))
         try:
