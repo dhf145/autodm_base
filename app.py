@@ -15,6 +15,7 @@ def start():
                 # I take sender_id just in case you want to know who's sent the message
                 sender_id = dms[i]['sender_id']
                 id = dms[i]['id']
+                recipient_id = dms[i]['recipient_id']
 
                 if len(message) is not 0 and len(message) < 280:
                     # prikitiw is the keyword
