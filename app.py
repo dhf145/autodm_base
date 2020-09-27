@@ -21,16 +21,19 @@ def start():
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
                     if "wts" in message:
+                        message = message.casefold()
                         message = message.replace("wts", "wt$")
                         pass
                     if "wtb" in message:
+                        message = message.casefold()
                         message = message.replace("wtb", "wt8")
                         pass
                     if "shopee" in message:
+                        message = message.casefold()
                         message = message.replace("shopee", "oren")
                         pass
                     if "Pasuju" in message:
-                        message = message.lower()
+                        message = message.casefold()
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
