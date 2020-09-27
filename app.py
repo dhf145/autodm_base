@@ -21,8 +21,7 @@ def start():
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
                     if "wts" or "wtb" in message:
-                        print("DM will be deleted because does contain bad words..")
-                        tw.delete_dm(id)
+                        message = message.replace("wt$")
                     elif "pasuju" in message:
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
