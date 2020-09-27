@@ -149,4 +149,5 @@ class Twitter:
             time.sleep(40)
         except Exception as e:
             print(e)
-            pass
+            time.sleep(40)
+            return dms
