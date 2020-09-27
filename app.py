@@ -21,7 +21,7 @@ def start():
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
                     if "pasuju" in message:
-                        message = lower(message)
+                        message = lower()
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
