@@ -20,18 +20,20 @@ def start():
                     # prikitiw is the keyword
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
-                    if "pasuju" in message:
+                    if "Pasuju" in message:
                         message.lower()
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
                                 tw.post_tweet(message)
                                 tw.reply_dm(sender_id)
+                                tw.delete_dm(id)
                             else:
                                 print("DM will be posted with media")
                                 print(dms[i]['shorted_media_url'])
                                 tw.post_tweet_with_media(message, dms[i]['media'],dms[i]['shorted_media_url'], dms[i]['type'])
                                 tw.reply_dm(sender_id)
+                                tw.delete_dm(id)
                         else:
                             print("DM deleted because its empty..")
                             tw.delete_dm(id)
